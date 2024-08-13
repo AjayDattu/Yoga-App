@@ -1,0 +1,115 @@
+/* App.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.top-nav {
+  background-color: #3c1053; /* Brinjal color */
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-nav-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.signup-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #7b2cbf;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: auto; /* Pushes the button to the right */
+}
+
+.signup-button:hover {
+  background-color: #3b82f6; /* Blue on hover */
+}
+
+.main-container {
+  display: flex;
+  flex: 1;
+}
+
+.side-nav {
+  width: 250px;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+  transition: transform 0.3s ease;
+  transform: translateX(-100%);
+  position: fixed;
+  top: 50px; /* Adjust based on top-nav height */
+  height: calc(100vh - 50px); /* Adjust based on top-nav height */
+}
+
+.side-nav.show {
+  transform: translateX(0);
+}
+
+.side-nav nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.side-nav nav ul li {
+  margin-bottom: 3px;
+}
+
+.side-nav nav ul li button {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.side-nav nav ul li button:hover {
+  background-color: #7b2cbf; /* Purple color on hover */
+  color: white;
+}
+
+.content-area {
+  flex: 1;
+  padding: 10px;
+  margin-left: 250px; /* Adjust to match the side-nav width */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
